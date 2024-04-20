@@ -1,0 +1,44 @@
+.home {
+  &__picture {
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    &:before {
+      content: "";
+      background: rgba(42, 108, 234, 0.8);
+      height: 100%;
+      width: 100%;
+      position: absolute;
+    }
+  }
+
+  &__image {
+    object-fit: cover;
+  }
+
+  &__welcome {
+    margin-top: auto;
+    margin-bottom: auto;
+    grid-row-gap: 26px;
+  }
+
+  &__welcome-container {
+    height: 100vh;
+  }
+
+  &__text-wrapper {
+    grid-row-gap: 10px;
+  }
+
+  &__headline {
+    color: white;
+  }
+
+  &__button {
+    padding: 20px 40px;
+    border-radius: 4px;
+    background-color: #ECEFF2;
+    width: fit-content;
+  }
+}

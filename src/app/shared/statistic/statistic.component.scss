@@ -1,0 +1,47 @@
+@import "./../../../styles/abstracts/_variables";
+
+.statistic {
+  &__picture {
+    background-image: url("./../../../assets/images/statistic_back-1920-2x.png");
+    background-size: cover;
+
+    @media (min-width: $screen-md) { order: 2; }
+  }
+
+  &__image {
+    object-fit: cover;
+  }
+
+  &__text-wrapper {
+    margin-top: 28px;
+    grid-row-gap: 27px;
+
+    @media (min-width: $screen-sm) {
+      margin-top: 7px;
+      grid-row-gap: unset;
+    }
+    @media (min-width: $screen-md) {
+      margin-top: 15px;
+      grid-row-gap: 15px;
+    }
+  }
+
+  &__headline {
+    line-height: 24px;
+    font-size: 20px;
+
+    @media (min-width: $screen-xl) {
+      font-size: 32px;
+      line-height: 40px;
+    }
+  }
+
+  &__body {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #5E646A;
+
+    @media (min-width: $screen-md) { text-align: left; }
+  }
+}

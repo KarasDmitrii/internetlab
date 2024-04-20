@@ -1,0 +1,31 @@
+.header {
+  &__container {
+    height: 80px;
+  }
+
+  &__logo {
+    grid-column-gap: 9px;
+  }
+
+  &__logo-text {
+    color: white;
+  }
+
+  &__burger {
+    width: 62px;
+    height: 62px;
+  }
+
+  &__links-wrapper {
+    grid-column-gap: 24px;
+  }
+
+  &__link {
+    text-wrap: nowrap;
+    color: white;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
