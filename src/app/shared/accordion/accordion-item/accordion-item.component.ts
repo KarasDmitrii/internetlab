@@ -7,9 +7,9 @@ import {
   Input,
   ViewChild
 } from '@angular/core';
-import { NgForOf, NgIf } from "@angular/common";
-import {fromEvent, startWith, takeUntil, tap} from "rxjs";
-import {AbstractComponent} from "../../abstract";
+import { NgIf } from "@angular/common";
+import { fromEvent, startWith, takeUntil, tap } from "rxjs";
+import { AbstractComponent } from "../../abstract";
 
 
 @Component({
@@ -17,9 +17,7 @@ import {AbstractComponent} from "../../abstract";
   templateUrl: "accordion-item.component.html",
   styleUrl: "accordion-item.component.scss",
   standalone: true,
-  imports: [
-    NgIf,
-  ],
+  imports: [ NgIf ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 

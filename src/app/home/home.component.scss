@@ -1,3 +1,5 @@
+@import "./../../styles/abstracts/_variables";
+
 .home {
   &__picture {
     top: 0;
@@ -18,9 +20,12 @@
   }
 
   &__welcome {
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto;
     grid-row-gap: 26px;
+    max-width: 748px;
+
+    @media (min-width: $screen-md) { grid-row-gap: 40px; }
+    @media (min-width: $screen-xl) { grid-row-gap: 92px; }
   }
 
   &__welcome-container {
@@ -29,10 +34,39 @@
 
   &__text-wrapper {
     grid-row-gap: 10px;
+
+    @media (min-width: $screen-md) { grid-row-gap: 17px; }
+    @media (min-width: $screen-xl) { grid-row-gap: 18px; }
   }
 
   &__headline {
     color: white;
+    font-size: 24px;
+    line-height: 32px;
+
+    @media (min-width: $screen-md) {
+      font-size: 32px;
+      line-height: 40px;
+    }
+    @media (min-width: $screen-xl) {
+      font-size: 52px;
+      line-height: 64px;
+    }
+  }
+
+  &__body {
+    color: white;
+    font-size: 16px;
+    line-height: 28px;
+
+    @media (min-width: $screen-md) {
+      font-size: 16px;
+      line-height: 28px;
+    }
+    @media (min-width: $screen-xl) {
+      font-size: 18px;
+      line-height: 32px;
+    }
   }
 
   &__button {
@@ -40,5 +74,10 @@
     border-radius: 4px;
     background-color: #ECEFF2;
     width: fit-content;
+  }
+
+  &__button-text {
+    font-size: 20px;
+    line-height: 24px;
   }
 }

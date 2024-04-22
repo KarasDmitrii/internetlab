@@ -1,5 +1,4 @@
 <il-header></il-header>
-
 <section class="container home__welcome-container grid">
   <picture class="home__picture d-flex justify-content-center h-100 w-100 position-absolute">
     <source srcset="assets/images/skyscraper-1920.png, assets/images/skyscraper-1920-2x.png 2x" media="(min-width: 1920px)">
@@ -10,12 +9,12 @@
   </picture>
   <div class="home__welcome d-grid g-col-2 g-col-xl-12 justify-content-center">
     <div class="home__text-wrapper d-grid">
-      <p class="home__headline headline-4 text-center">Говорят, никогда не поздно сменить профессию</p>
-      <p class="body-16 text-center">Сделай круто тестовое задание и у тебя получится</p>
+      <p class="home__headline headline text-center">Говорят, никогда не поздно сменить профессию</p>
+      <p class="home__body body text-center">Сделай круто тестовое задание и у тебя получится</p>
     </div>
     <div class="d-grid justify-content-center">
       <button class="home__button">
-        <p class="headline-5">
+        <p class="home__button-text headline">
           Проще простого!
         </p>
       </button>
@@ -28,4 +27,9 @@
   [heading]="accordion.heading"
   [items]="accordion.items"
 ></il-accordion>
+<il-survey
+  [items]="items"
+></il-survey>
+<il-footer></il-footer>
+
 

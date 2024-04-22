@@ -18,11 +18,12 @@
 
     &:hover {
       color: #2A6CEA;
+
       .accordion-item__icon {
         transition-duration: 300ms;
-        transition-property: fill, stroke;
-        path{ fill: #2A6CEA; }
         stroke: #2A6CEA;
+
+        path{ fill: #2A6CEA; }
       }
     }
   }
@@ -41,7 +42,7 @@
     height: 24px;
     width: 24px;
     transition-duration: 400ms;
-    transition-property: transform;
+    transition-property: transform, fill, stroke;
 
     &_open {
       transform: rotate(45deg);

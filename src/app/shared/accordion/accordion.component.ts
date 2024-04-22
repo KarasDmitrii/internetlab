@@ -18,6 +18,9 @@ import {AccordionItemComponent} from "./accordion-item/accordion-item.component"
 export class AccordionComponent {
 
   @Input() heading: string;
-  @Input() items: any;
+  @Input() items: {
+    heading: string;
+    content: string;
+  }[];
 
 }
