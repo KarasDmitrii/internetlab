@@ -1,9 +1,15 @@
 .headline {
+  font-family: "Graphik LCG", sans-serif;
   font-weight: 600;
 }
 
 .body {
+  font-family: "Graphik LCG", sans-serif;
   font-weight: 400;
+
+  &_bold {
+    font-weight: 600;
+  }
 }
 
 .headline-2 {

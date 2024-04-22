@@ -1,0 +1,50 @@
+.accordion-item {
+  &__body {
+    font-size: 18px;
+    line-height: 32px;
+
+    &_content {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
+
+  &__heading-wrapper {
+    transition-duration: 300ms;
+    transition-property: color;
+    color: #191C1F;
+    fill: #191C1F;
+    stroke: #191C1F;
+
+    &:hover {
+      color: #2A6CEA;
+      .accordion-item__icon {
+        transition-duration: 300ms;
+        transition-property: fill, stroke;
+        path{ fill: #2A6CEA; }
+        stroke: #2A6CEA;
+      }
+    }
+  }
+
+  &__content {
+    transition-duration: 400ms;
+    transition-property: height, margin-top;
+    overflow: hidden;
+
+    &_open {
+      margin-top: 16px;
+    }
+  }
+
+  &__icon {
+    height: 24px;
+    width: 24px;
+    transition-duration: 400ms;
+    transition-property: transform;
+
+    &_open {
+      transform: rotate(45deg);
+    }
+  }
+}
