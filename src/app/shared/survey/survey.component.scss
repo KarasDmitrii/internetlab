@@ -25,6 +25,7 @@
   }
 
   &__item {
+    height: fit-content;
     grid-row-gap: 14px;
 
     @media (min-width: $screen-md) { grid-row-gap: 46px; }

@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { NgForOf, NgIf } from "@angular/common";
-import {AccordionItemComponent} from "./accordion-item/accordion-item.component";
+import { AccordionItemComponent } from "./accordion-item/accordion-item.component";
 
 
 @Component({
@@ -15,6 +15,7 @@ import {AccordionItemComponent} from "./accordion-item/accordion-item.component"
   ],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
+
 export class AccordionComponent {
 
   @Input() heading: string;
@@ -22,5 +23,4 @@ export class AccordionComponent {
     heading: string;
     content: string;
   }[];
-
 }

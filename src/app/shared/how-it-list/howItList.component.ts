@@ -1,16 +1,16 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { NgForOf } from "@angular/common";
 
 
 @Component({
-  selector: 'how-it-list',
+  selector: 'il-how-it-list',
   standalone: true,
   templateUrl: './howItList.component.html',
-  imports: [
-    NgForOf
-  ],
-  styleUrl: './howItList.component.scss'
+  imports: [ NgForOf ],
+  styleUrl: './howItList.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
+
 export class HowItListComponent {
   protected items = [{
     icon: 'assets/icons/waiting.svg',

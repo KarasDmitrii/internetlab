@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NgForOf } from "@angular/common";
 
 
@@ -11,7 +11,9 @@ import { NgForOf } from "@angular/common";
   ],
   styleUrl: './survey.component.scss'
 })
+
 export class SurveyComponent {
+
   @Input() items: {
     heading: string;
     content: string;

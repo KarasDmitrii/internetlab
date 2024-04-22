@@ -3,8 +3,8 @@ import { IlHeaderComponent } from "../shared/header/header.component";
 import { HowItListComponent } from "../shared/how-it-list/howItList.component";
 import { StatisticComponent } from "../shared/statistic/statistic.component";
 import { AccordionComponent } from "../shared/accordion/accordion.component";
-import {SurveyComponent} from "../shared/survey/survey.component";
-import {FooterComponent} from "../shared/footer/footer.component";
+import { SurveyComponent } from "../shared/survey/survey.component";
+import { FooterComponent } from "../shared/footer/footer.component";
 
 
 @Component({
@@ -21,6 +21,7 @@ import {FooterComponent} from "../shared/footer/footer.component";
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
+
 export class IlHomeComponent {
 
   protected items = [

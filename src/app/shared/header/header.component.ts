@@ -1,4 +1,4 @@
-import {Component, HostBinding} from '@angular/core';
+import { ChangeDetectionStrategy, Component, HostBinding } from '@angular/core';
 import { RouterLink } from "@angular/router";
 
 
@@ -9,8 +9,10 @@ import { RouterLink } from "@angular/router";
   imports: [
     RouterLink
   ],
-  styleUrl: './header.component.scss'
+  styleUrl: './header.component.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
+
 export class IlHeaderComponent {
   @HostBinding('class') private class: string = `position-absolute w-100`;
 }
