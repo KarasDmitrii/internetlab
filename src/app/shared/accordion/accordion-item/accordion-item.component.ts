@@ -52,7 +52,6 @@ export class AccordionItemComponent extends AbstractComponent implements AfterVi
       tap(() => {
         this.maxHeight = `${this.contentElement.offsetHeight}px`;
         this.changeDetectorRef.markForCheck();
-        console.log(this.contentElement.offsetHeight)
       }),
       takeUntil(this.destroyed$)
     ).subscribe();
